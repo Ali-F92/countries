@@ -1,0 +1,33 @@
+.linkButton {
+  display: inline-block;
+  font-weight: 600;
+  min-width: 100px;
+  color: var(--very-dark-blue-text);
+  background-color: var(--white);
+  border-radius: 2px;
+  padding: 0.5em;
+  text-align: center;
+}
+.dark .linkButton {
+  color: var(--white);
+  background-color: var(--dark-blue);
+}
+.linkButton.linkButton--country {
+  box-shadow: 0 0 7px #77777729;
+}
+.dark .linkButton.linkButton--country {
+  box-shadow: 0 0 7px hsl(207deg 26% 17% / 35%);
+}
+.linkButton.linkButton--back {
+  box-shadow: 0 0 7px 2px #77777746;
+  position: sticky;
+  top: 85px;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+.dark .linkButton.linkButton--back {
+  box-shadow: 0 0 5px hsl(207deg 14.85% 24% / 25%);
+}
+.linkButton.linkButton--back span {
+  margin-left: 0.5em;
+}

@@ -1,0 +1,50 @@
+.selectWrapper {
+  position: relative;
+  width: 220px;
+}
+.selectButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 54px;
+  color: var(--very-dark-blue-text);
+  box-shadow: 0 0 7px #d1d0d054;
+  background-color: var(--white);
+  margin-bottom: 1.5em;
+  border-radius: 0.4em;
+  padding: 18px;
+  font-weight: 600;
+}
+.selectWrapper .options {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  margin-top: 0.4em;
+  top: 54px;
+  color: var(--very-dark-blue-text);
+  background-color: var(--white);
+  box-shadow: 0 0 7px #d1d0d054;
+  border-radius: 0.4em;
+  padding: 0.8em 0;
+  list-style: none;
+  font-weight: 600;
+}
+.dark .selectWrapper .options,
+.dark .selectButton {
+  color: var(--white);
+  box-shadow: 0 0 7px hsl(207deg 26% 17% / 35%);
+  background-color: var(--dark-blue);
+}
+.selectWrapper .options:focus-visible {
+  outline: none;
+}
+.selectWrapper .option {
+  padding: 10px 18px;
+}
+.selectWrapper .option:hover {
+  background-color: #d1d0d021;
+}
+.selectWrapper .icon {
+  width: 0.9em;
+  height: 0.9em;
+}

@@ -1,0 +1,66 @@
+@import url("/src/common.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+  width: 100%;
+  position: fixed;
+  padding: 1rem;
+  box-shadow: 0 3px 7px #d1d0d054;
+  height: 80px;
+  z-index: 11;
+  color: var(--very-dark-blue-text);
+}
+.dark .header {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  box-shadow: 0 3px 7px hsl(207deg 26% 17% / 35%);
+}
+.theme {
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  gap: 0.6rem;
+  background: transparent;
+  border: none;
+  padding: 1em;
+  margin-right: -1em;
+}
+.dark .theme {
+  color: var(--white);
+}
+.theme:hover {
+  background: #ebe9e92e;
+  border-radius: 0.4em;
+}
+.themeIcon {
+  width: 24;
+  height: 24;
+}
+.headerPlaceholder {
+  height: 80px;
+}
+
+.main {
+  padding: 1rem;
+  background-color: var(--very-light-gray);
+  min-height: calc(100vh - 80px);
+}
+.dark .main {
+  background-color: var(--very-dark-blue);
+}
+
+@media only screen and (min-width: 768px) {
+  .header,
+  .main {
+    padding: 3rem;
+  }
+}
